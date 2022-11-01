@@ -6,6 +6,7 @@ streamlit.text('🥣 🥗 🐔 🥑🍞 Omega 3 & Blueberry Oatmeal')
 streamlit.text('kale, Spinach & Rocket Smoothie')
 streamlit.text('hard Boiled Fee-Range Egg')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+import snowflake.connector
 
 
 import pandas
@@ -37,4 +38,4 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it the screen as a table
 streamlit.dataframe(fruityvice_normalized)
 
-import snowflake.connector
+
